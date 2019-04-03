@@ -19,7 +19,7 @@ export default {
     CharacterSelectBattle
   },
   mounted(){
-		fetch("http://localhost:3000/characters/")
+		fetch("https://marvel-battle-api.herokuapp.com/characters")
 		.then(res => res.json())
 		.then(data => this.characters = data)
 	}

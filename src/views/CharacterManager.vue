@@ -23,7 +23,7 @@ export default {
     }
   },
   mounted(){
-    fetch("http://localhost:3000/characters/")
+    fetch("https://marvel-battle-api.herokuapp.com/characters")
     .then(res => res.json())
     .then(data => this.characters = data)
 
@@ -34,7 +34,7 @@ export default {
   },
   methods: {
     deleteCharacter(id){
-      fetch("http://localhost:3000/characters/" + id, {
+      fetch("https://marvel-battle-api.herokuapp.com/characters" + id, {
         method: "DELETE"
       })
       .then(() => {

@@ -126,7 +126,7 @@ export default {
           archetype: this.archetype
         }
 
-        fetch("http://localhost:3000/characters", {
+        fetch("https://marvel-battle-api.herokuapp.com/characters", {
           method: "POST",
           body: JSON.stringify(character),
           headers: { "Content-Type": "application/json" }

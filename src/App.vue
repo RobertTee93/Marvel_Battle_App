@@ -3,7 +3,7 @@
     <div id="nav">
       <router-link class="nav-btn" to="/"><div>Home</div></router-link>
       <router-link class="nav-btn" to="/select-character"><div>Battle</div></router-link>
-      <router-link class="nav-btn" to="/character-viewer"><div>Character info</div></router-link>
+      <router-link id="fix-nav" class="nav-btn" to="/character-viewer"><div>Character info</div></router-link>
       <!-- <router-link class="nav-btn" to="/character-edit"><div>Character Manager</div></router-link> -->
     </div>
     <router-view/>
@@ -55,6 +55,44 @@ html {
   text-decoration: none;
   color: white;
   margin-top: 15px;
+}
+
+@media only screen
+and (max-width : 700px){
+  #nav {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+
+  #nav a:hover {
+    background: #f50404;
+  }
+
+  .nav-btn {
+    width: 220px;
+    height: 50px;
+    text-decoration: none;
+    border: 1px solid white;
+    text-align: center;
+    margin: 0 5px;
+  }
+
+
+  .nav-btn div {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    margin-top: 15px;
+  }
+
+  #fix-nav div {
+    margin-top: 8px;
+  }
+
 }
 
 </style>

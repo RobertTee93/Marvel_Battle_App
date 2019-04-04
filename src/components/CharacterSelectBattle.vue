@@ -50,4 +50,33 @@ export default {
   height: 80px;
 }
 
+@media only screen
+and (max-width : 700px){
+  #character-select-grid {
+    display: flex;
+    justify-content: center;
+    margin: 0 5px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+
+  .character-select-icon {
+    width: 80px;
+    height: 80px;
+    border: white 2px solid;
+    background-color: #404040cc;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(20px 20px 30px #222);
+  }
+
+  .character-select-icon:hover {
+    background: #f50404;
+  }
+
+  .character-select-icon img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
 </style>

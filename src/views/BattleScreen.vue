@@ -28,4 +28,17 @@ export default {
   border-radius: 50px;
 }
 
+@media only screen
+and (max-width : 700px){
+  #battle-container {
+    margin: auto;
+    background-color: #0a0a0ac7;
+    width: 100%;
+    height: 650px;
+    margin-top: 40px;
+    position: relative;
+    border-radius: 50px;
+  }
+}
+
 </style>

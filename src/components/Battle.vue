@@ -255,6 +255,132 @@ export default {
   color: white;
 }
 
+@media only screen
+and (max-width : 700px) {
+  #player {
+    width: 180px;
+    height: 350px;
+    position:absolute;
+    left: 5px;
+    top: 140px;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(20px 20px 30px #222);
+    animation: player-enter 2s ease-out;
+  }
+
+  #player-health div {
+    height: 10px;
+    border-radius: 15px;
+    background: green;
+  }
+
+  #player-health {
+    width: 100px;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    position: absolute;
+    bottom: 70px;
+    left: 15px;
+  }
+
+  #player-name {
+    width: 100px;
+    position: absolute;
+    bottom: 20px;
+    left: 15px;
+    margin: 0;
+    text-align: center;
+  }
+
+
+  #enemy {
+    width: 180px;
+    height: 350px;
+    position:absolute;
+    right: 5px;
+    top: 140px;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(20px 20px 30px #222);
+    animation: enemy-enter 2s ease-out;
+  }
+
+
+  #enemy-health div {
+    height: 10px;
+    border-radius: 15px;
+    background: green;
+  }
+
+  #enemy-health {
+    width: 100px;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    position: absolute;
+    bottom: 70px;
+    right: 15px;
+  }
+
+  #enemy-name {
+    width: 100px;
+    position: absolute;
+    bottom: 20px;
+    right: 15px;
+    margin: 0;
+    text-align: center;
+  }
+
+  #attack-btn {
+    position: absolute;
+    width: 50px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: auto;
+    bottom: 20px;
+    border: 2px solid white;
+    border-radius: 100px;
+  }
+
+  #attack-btn:hover {
+    background: #f50404;
+  }
+
+  #enemy-message {
+    position: absolute;
+    width: 200px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: auto;
+    bottom: 80px;
+  }
+
+  #attack-message {
+    width: 250px;
+    margin: auto;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    border-radius: 30px;
+    background: #ff0c0c73;
+  }
+
+  #select-character {
+    position: absolute;
+    text-align: center;
+    top: 520px;
+    text-decoration: none;
+    color: white;
+    width: 150px;
+    border: white 1px solid;
+    border-radius: 40px;
+    margin: auto;
+  }
+
+}
+
 @keyframes player-enter {
   0%{
     position:absolute;

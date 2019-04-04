@@ -1,6 +1,8 @@
 <template lang="html">
-
+  <div class="">
     <characters></characters>
+  </div>
+
 
 </template>
 
@@ -15,4 +17,5 @@ export default {
 </script>
 
 <style lang="css" scoped>
+
 </style>

@@ -32,6 +32,13 @@ export default {
   padding: 20px;
 }
 
+@media only screen
+and (max-width : 700px){
+  #character-container{
+    width: 90%;
+  }
+}
+
 h3 {
   margin: 0;
 }

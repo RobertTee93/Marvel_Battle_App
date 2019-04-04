@@ -1,5 +1,7 @@
 <template lang="html">
   <div>
+    <h1 v-if="!selectedCharacter">Click to View</h1>
+    <h2 v-if="selectedCharacter">Scroll for more</h2>
     <character-info :character="selectedCharacter"></character-info>
   <div id="character-select-grid">
     <div v-for="character of characters" v-on:click="getCharacterInfo(character)" class="character-select-icon">
@@ -66,6 +68,26 @@ export default {
 .character-select-icon img {
   width: 80px;
   height: 80px;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 0;
+}
+
+@media only screen
+and (max-width : 700px){
+  #character-select-grid {
+    display: flex;
+    justify-content: center;
+    margin: 0 5px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
 }
 
 </style>

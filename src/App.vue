@@ -3,6 +3,7 @@
     <div id="nav">
       <router-link class="nav-btn" to="/"><div>Home</div></router-link>
       <router-link class="nav-btn" to="/select-character"><div>Battle</div></router-link>
+      <router-link class="nav-btn" to="/character-viewer"><div>Character info</div></router-link>
       <!-- <router-link class="nav-btn" to="/character-edit"><div>Character Manager</div></router-link> -->
     </div>
     <router-view/>
@@ -32,6 +33,7 @@ html {
   margin: auto;
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 #nav a:hover {
@@ -46,6 +48,7 @@ html {
   text-align: center;
   margin: 0 5px;
 }
+
 
 .nav-btn div {
   display: inline-block;

@@ -27,7 +27,7 @@ export default {
 #character-select-grid {
   display: flex;
   justify-content: center;
-  margin: 0 300px;
+  margin: 0 400px;
   flex-wrap: wrap;
   margin-top: 50px;
 }

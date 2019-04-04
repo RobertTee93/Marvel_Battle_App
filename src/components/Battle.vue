@@ -143,7 +143,7 @@ export default {
   top: 100px;
   -webkit-filter: drop-shadow(5px 5px 5px #222);
   filter: drop-shadow(20px 20px 30px #222);
-  animation: player-enter 1s ease-out;
+  animation: player-enter 2s ease-out;
 }
 
 #player-health div {
@@ -179,7 +179,7 @@ export default {
   top: 100px;
   -webkit-filter: drop-shadow(5px 5px 5px #222);
   filter: drop-shadow(20px 20px 30px #222);
-  animation: enemy-enter 1.5s ease-out;
+  animation: enemy-enter 2s ease-out;
 }
 
 
@@ -262,6 +262,12 @@ export default {
     top: 110px;
   }
 
+  80%{
+    position:absolute;
+    left: -450px;
+    top: 110px;
+  }
+
   100%{
     position:absolute;
     left: 50px;
@@ -277,7 +283,7 @@ export default {
     top: 100px;
   }
 
-  20%{
+  80%{
     position:absolute;
     right: -450px;
     top: 100px;
